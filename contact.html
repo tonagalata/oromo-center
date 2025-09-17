@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oromo Center | Contact Us</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <link rel="canonical" href="https://oromocenter.com/contact.html" />
+    <meta name="description" content="Contact the Oromo Center for assistance with employment, language, legal, technology, unemployment, and community support services in your city." />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Oromo Center | Contact Us" />
+    <meta property="og:description" content="Get help from the Oromo Center. Reach our offices in Minneapolis, DC, Portland, Seattle, and Atlanta." />
+    <meta property="og:url" content="https://oromocenter.com/contact.html" />
+    <meta property="og:image" content="https://oromocenter.com/static/og-image.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Oromo Center | Contact Us" />
+    <meta name="twitter:description" content="We support the Oromo diaspora across major U.S. cities. Contact us for help." />
+    <meta name="twitter:image" content="https://oromocenter.com/static/og-image.jpg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .input-focus:focus {
+            border-color: #1d4ed8;
+            box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.2);
+        }
+        .flag-colors {
+            background: linear-gradient(to bottom, #000000 33%, #EF3340 33%, #EF3340 66%, #FFFFFF 66%);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Header partial -->
+    <div id="site-header"></div>
+
+    <!-- Contact Header -->
+    <div class="bg-blue-700 text-white">
+        <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl" data-aos="fade-down">
+                Contact Us
+            </h1>
+            <p class="mt-6 max-w-3xl mx-auto text-xl" data-aos="fade-up" data-aos-delay="200">
+                We're here to help. Reach out to us for assistance, questions, or to get involved.
+            </p>
+        </div>
+    </div>
+
+    <!-- Contact Form & Information -->
+    <div class="py-12 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div class="bg-white rounded-lg shadow-md p-8" data-aos="fade-right" id="help">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">Send us a Message</h2>
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label for="firstName" class="block text-sm font-medium text-gray-700">First Name</label>
+                                <input type="text" id="firstName" name="firstName" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm input-focus focus:ring-blue-500 focus:border-blue-500 sm:text-sm" required>
+                            </div>
+                            <div>
+                                <label for="lastName" class="block text-sm font-medium text-gray-700">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm input-focus focus:ring-blue-500 focus:border-blue-500 sm:text-sm" required>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                            <input type="email" id="email" name="email" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm input-focus focus:ring-blue-500 focus:border-blue-500 sm:text-sm" required>
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm input-focus focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                        </div>
+                        <div>
+                            <label for="location" class="block text-sm font-medium text-gray-700">Location</label>
+                            <select id="location" name="location" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm input-focus focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                                <option value="">Select your city</option>
+                                <option value="minneapolis">Minneapolis, MN</option>
+                                <option value="dc">Washington, DC</option>
+                                <option value="portland">Portland, OR</option>
+                                <option value="seattle">Seattle, WA</option>
+                                <option value="atlanta">Atlanta, GA</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="service" class="block text-sm font-medium text-gray-700">Service Needed</label>
+                            <select id="service" name="service" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm input-focus focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                                <option value="">Select a service</option>
+                                <option value="employment">Employment Services</option>
+                                <option value="language">Language Services</option>
+                                <option value="legal">Legal Services</option>
+                                <option value="technology">Technology Services</option>
+                                <option value="unemployment">Unemployment Services</option>
+                                <option value="community">Community Support</option>
+                                <option value="general">General Question</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                            <textarea id="message" name="message" rows="4" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm input-focus focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="Please describe how we can help you..." required></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="space-y-8" data-aos="fade-left">
+                    <!-- Main Office -->
+                    <!-- <div class="bg-white rounded-lg shadow-md p-6 contact-card transition duration-300 ease-in-out">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 bg-blue-100 rounded-md p-3">
+                                <i data-feather="home" class="h-6 w-6 text-blue-700"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-gray-900">Main Office - Minneapolis</h3>
+                            </div>
+                        </div>
+                        <div class="mt-4 space-y-2">
+                            <p class="text-sm text-gray-600">
+                                <i data-feather="map-pin" class="inline h-4 w-4 mr-2"></i>
+                                1234 Cedar Avenue<br>
+                                Minneapolis, MN 55404
+                            </p>
+                            <p class="text-sm text-gray-600">
+                                <i data-feather="phone" class="inline h-4 w-4 mr-2"></i>
+                                (612) 555-0123
+                            </p>
+                            <p class="text-sm text-gray-600">
+                                <i data-feather="mail" class="inline h-4 w-4 mr-2"></i>
+                                info@oromocenter.com
+                            </p>
+                            <p class="text-sm text-gray-600">
+                                <i data-feather="globe" class="inline h-4 w-4 mr-2"></i>
+                                www.oromocenter.com
+                            </p>
+                            <p class="text-sm text-gray-600">
+                                <i data-feather="clock" class="inline h-4 w-4 mr-2"></i>
+                                Mon-Fri: 9:00 AM - 6:00 PM<br>
+                                Sat: 10:00 AM - 4:00 PM
+                            </p>
+                        </div>
+                    </div> -->
+
+                    <!-- Regional Offices -->
+                    <!-- <div class="bg-white rounded-lg shadow-md p-6 contact-card transition duration-300 ease-in-out">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 bg-blue-100 rounded-md p-3">
+                                <i data-feather="map" class="h-6 w-6 text-blue-700"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-gray-900">Regional Offices</h3>
+                            </div>
+                        </div>
+                        <div class="mt-4 space-y-4">
+                            <div>
+                                <h4 class="text-sm font-medium text-gray-900">Washington, DC</h4>
+                                <p class="text-sm text-gray-600">(202) 555-0124 | dc@oromocenter.com</p>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-medium text-gray-900">Portland, OR</h4>
+                                <p class="text-sm text-gray-600">(503) 555-0125 | portland@oromocenter.com</p>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-medium text-gray-900">Seattle, WA</h4>
+                                <p class="text-sm text-gray-600">(206) 555-0126 | seattle@oromocenter.com</p>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-medium text-gray-900">Atlanta, GA</h4>
+                                <p class="text-sm text-gray-600">(404) 555-0127 | atlanta@oromocenter.com</p>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- Emergency Contact -->
+                    <!-- <div class="bg-red-50 border border-red-200 rounded-lg p-6">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 bg-red-100 rounded-md p-3">
+                                <i data-feather="phone-call" class="h-6 w-6 text-red-700"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-red-900">Emergency Assistance</h3>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <p class="text-sm text-red-700">
+                                For urgent assistance or crisis situations, call our 24/7 hotline:
+                            </p>
+                            <p class="text-lg font-semibold text-red-900 mt-2">
+                                (612) 555-HELP
+                            </p>
+                        </div>
+                    </div> -->
+
+                    <!-- Donate -->
+                    <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-6 contact-card transition duration-300 ease-in-out">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 bg-yellow-100 rounded-md p-3">
+                                <i data-feather="coffee" class="h-6 w-6 text-yellow-700"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-gray-900">Support Our Work</h3>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <p class="text-sm text-gray-700">If this resource helps you, consider buying our volunteers a coffee.</p>
+                            <a href="https://buymeacoffee.com/oromo" target="_blank" rel="noopener" class="inline-flex items-center mt-3 px-4 py-2 rounded-md bg-yellow-500 text-white text-sm font-medium hover:bg-yellow-600">
+                                Buy Me a Coffee
+                                <i data-feather="arrow-right" class="ml-2 h-4 w-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                <h2 class="text-base text-blue-700 font-semibold tracking-wide uppercase" data-aos="fade-up">Help</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl" data-aos="fade-up" data-aos-delay="100">
+                    Frequently Asked Questions
+                </p>
+            </div>
+
+            <div class="mt-10">
+                <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
+                    <div class="space-y-6" data-aos="fade-up" data-aos-delay="200">
+                        <div>
+                            <h3 class="text-lg font-medium text-gray-900">How quickly will I receive a response?</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                We typically respond to all inquiries within 24-48 hours during business days.
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-medium text-gray-900">Do you provide services in Afaan Oromo?</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Yes! We have staff members who speak Afaan Oromo and can provide services in your preferred language.
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-medium text-gray-900">Are your services free?</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Most of our services are free or low-cost. We work with government agencies and nonprofits to provide affordable assistance.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="space-y-6" data-aos="fade-up" data-aos-delay="300">
+                        <div>
+                            <h3 class="text-lg font-medium text-gray-900">Can I get help if I'm not in one of your main cities?</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Yes! We provide virtual assistance and can connect you with local resources in your area.
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-medium text-gray-900">How can I volunteer with the Oromo Center?</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                We welcome volunteers! Please contact us to learn about current volunteer opportunities in your area.
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-medium text-gray-900">Do you offer cultural events and programs?</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Absolutely! We host regular cultural events, language classes, and community gatherings. Check our events calendar for upcoming activities.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="bg-blue-700">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
+            <h2 class="text-3xl font-extrabold tracking-tight text-white sm:text-4xl" data-aos="fade-right">
+                <span class="block">Ready to get started?</span>
+                <span class="block">We're here to help you succeed.</span>
+            </h2>
+            <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0" data-aos="fade-left">
+                <div class="inline-flex rounded-md shadow">
+                    <a href="services.html" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-blue-700 bg-white hover:bg-gray-50">
+                        Explore Services
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">About</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="history.html" class="text-base text-gray-300 hover:text-white">Our History</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Mission</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Team</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Services</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="services.html" class="text-base text-gray-300 hover:text-white">All Services</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Resources</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Programs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Community</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Events</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Volunteer</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Donate</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Connect</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="contact.html" class="text-base text-gray-300 hover:text-white">Contact Us</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Facebook</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
+                <div class="flex space-x-6 md:order-2">
+                    <a href="#" class="text-gray-400 hover:text-gray-300">
+                        <i data-feather="facebook" class="h-6 w-6"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-gray-300">
+                        <i data-feather="twitter" class="h-6 w-6"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-gray-300">
+                        <i data-feather="instagram" class="h-6 w-6"></i>
+                    </a>
+                </div>
+                <p class="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
+                    &copy; 2025 Oromo Center. All rights reserved.<br>
+                    Visit us at <a href="https://oromocenter.com" class="text-blue-400 hover:text-blue-300">oromocenter.com</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init();
+        feather.replace();
+        
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIcon = document.getElementById('menu-icon');
+            
+            if (mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.remove('hidden');
+                menuIcon.setAttribute('data-feather', 'x');
+            } else {
+                mobileMenu.classList.add('hidden');
+                menuIcon.setAttribute('data-feather', 'menu');
+            }
+            feather.replace();
+        }
+        
+        // Form submission handling
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Here you would typically send the form data to your server
+            alert('Thank you for your message! We will get back to you within 24-48 hours.');
+            this.reset();
+        });
+    </script>
+    <script src="partials/partials.js"></script>
+</body>
+</html>
